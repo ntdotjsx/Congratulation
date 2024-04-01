@@ -21,7 +21,7 @@ function App() {
   const [inputText, setInputText] = useState('');
   const navigate = useNavigate();
 
-  const webhookUrl = 'https://discord.com/api/webhooks/1220074728446754878/4HfmnyaK2dRNdG1Y6atmxqthwNJrJEuCigiBWZlKVhQGdleMFegBC7WrHFS4KP8o43Mv';
+  const webhookUrl = '';
 
   const sendToDiscord = async (message, userName) => {
     try {
