@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 8em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #ff7700aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(1) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* emoji animation */
+
+@keyframes floatAndDisappear {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+}
+
+.emoji {
+  font-size: 24px;
+  position: absolute;
+  animation: floatAndDisappear 2s linear forwards;
+  font-family: "Knewave", system-ui;
+}
+
+@keyframes floatUpAndDisappear2 {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.floating-message {
+  position: absolute;
+  animation: floatUpAndDisappear2 10s linear;
+}
